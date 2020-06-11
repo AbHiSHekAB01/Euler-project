@@ -8,14 +8,14 @@ import java.math.BigInteger;
 public class q20 {
 		public static void main(String args[]) {
 			BigInteger f= getFact(100);
-			BigInteger a= new BigInteger("10");
+			BigInteger s= new BigInteger("10");
 			BigInteger r= new BigInteger("1");
 			BigInteger sum=new BigInteger("0");
 		    while(f.compareTo(r)>0)
 		    {
-		    	r=f.remainder(a);
+		    	r=f.remainder(s);
 	    		sum=sum.add(r);
-	    		f=f.divide(a);
+	    		f=f.divide(s);
 		    }
 		    System.out.println(sum);
 		}
