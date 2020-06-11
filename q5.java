@@ -27,3 +27,7 @@ public class q5 {
 	}
 
 }
+
+//------------------output--------------------------------------------------
+
+//the smallest positive number that is evenly divisible by all of the numbers from 1 to 20  232792560
