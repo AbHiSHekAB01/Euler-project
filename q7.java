@@ -5,31 +5,33 @@
 package eulerProject;
 
 public class q7 {
+	public static void main(String args[]) {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int a=3,i=1;
-		while ( i<10001)
-		{ 
-			int c=0;
-			for ( int j=3; j<=a/2; j+=2)
-			{
-				if (a%j==0)
-				{
-					c++;
-					break;
-		
-				}
+		int n=3, i=1;
+		while(i<10001) {
+			if(isPrime(n)) {
+				i++;	
 			}
-			if (c==0) {
-				i++;
-			}
-			a+=2;	
+			n+=2;
 		}
-		System.out.println(a-2);
-		}
-
+		System.out.println(n-2);
 	}
+	public static boolean isPrime(int n) {
+		int c=0;
+		for(int i=3; i<=n/2;i+=2) {
+			if(n%i==0) {
+				c++;
+				return false;
+				
+			}
+		}
+		
+		if(c==0) {
+			return true;
+		}
+		return false;
+	}
+}
 
 //------------------output--------------------------------------------------
 
