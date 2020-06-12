@@ -8,8 +8,8 @@ public class q3{
 
 	public static void main(String[] args) {
 		
-		long n= 600851475143L;
-		for  (long i=2L; i<n; i++)
+		double n= 600851475143d;
+		for  (int i=2; i<n/2; i++)
 		{
 			while(n%i==0)
 			{
