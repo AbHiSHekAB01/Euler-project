@@ -15,15 +15,19 @@ public class q5 {
 		}
 	}
 
-	private static boolean isdivisiable(int n) {int c=0;
+	private static boolean isdivisiable(int n) {
+		int c=0;
 		for(int i=1;i<=20;i++) {
-			if(n%i==0) {
+			if(n%i==0) 
 				c++;
+			else {
+				return false;
 			}
-		}if(c==20)
+		}
+		if(c==20)
 			return true;
-		else 
-			return false;
+		
+		return false;
 	}
 
 }
