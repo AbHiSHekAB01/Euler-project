@@ -4,34 +4,22 @@
 
 package eulerProject;
 
-public class q5 {
-
-	public static void main(String[] args) {
-		for(int i=20;i>=1;i+=20) {
-			if(isdivisiable(i)) {
-				System.out.println( "the smallest positive number that is evenly divisible by all of the numbers from 1 to 20  "+i);
+public class rough5 {
+	public static void main(String args[]) {
+		int i=20;
+		for(;i>0;i+=20) {
+			int c=1;
+			for(int j=1;j<=20;j++) {
+				if(i%j!=0) {
+					c++;break;
+				}
+			}
+			if(c==1) 
 				break;
-			}
-		}
+		}System.out.println(i);
 	}
-
-	private static boolean isdivisiable(int n) {
-		int c=0;
-		for(int i=1;i<=20;i++) {
-			if(n%i==0) 
-				c++;
-			else {
-				return false;
-			}
-		}
-		if(c==20)
-			return true;
-		
-		return false;
-	}
-
 }
 
-//------------------output--------------------------------------------------
+//-----------------------output---------------------------------------------------------------
+//232792560
 
-//the smallest positive number that is evenly divisible by all of the numbers from 1 to 20  232792560
